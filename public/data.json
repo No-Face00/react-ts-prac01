@@ -1,0 +1,182 @@
+[
+  {
+    "playerName": "Arif Hasan",
+    "playerImg": "https://i.pravatar.cc/300?img=11",
+    "origin": "Bangladesh",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm Off Break",
+    "battingStyle": "Right-hand Bat",
+    "price": 850000
+  },
+  {
+    "playerName": "Rayan Ahmed",
+    "playerImg": "https://i.pravatar.cc/300?img=12",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm Medium",
+    "battingStyle": "Left-hand Bat",
+    "price": 1200000
+  },
+  {
+    "playerName": "Sakib Rahman",
+    "playerImg": "https://i.pravatar.cc/300?img=13",
+    "origin": "Pakistan",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm Fast",
+    "battingStyle": "Right-hand Bat",
+    "price": 950000
+  },
+  {
+    "playerName": "Adnan Khan",
+    "playerImg": "https://i.pravatar.cc/300?img=14",
+    "origin": "India",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm Off Break",
+    "battingStyle": "Right-hand Bat",
+    "price": 1500000
+  },
+  {
+    "playerName": "Nabil Chowdhury",
+    "playerImg": "https://i.pravatar.cc/300?img=15",
+    "origin": "Bangladesh",
+    "playerType": "Wicketkeeper",
+    "bowlingStyle": "Right-arm Medium",
+    "battingStyle": "Left-hand Bat",
+    "price": 1100000
+  },
+  {
+    "playerName": "Fahim Islam",
+    "playerImg": "https://i.pravatar.cc/300?img=16",
+    "origin": "Sri Lanka",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Left-arm Orthodox",
+    "battingStyle": "Left-hand Bat",
+    "price": 1350000
+  },
+  {
+    "playerName": "Imran Shah",
+    "playerImg": "https://i.pravatar.cc/300?img=17",
+    "origin": "Pakistan",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm Fast",
+    "battingStyle": "Right-hand Bat",
+    "price": 1000000
+  },
+  {
+    "playerName": "Tanvir Hossain",
+    "playerImg": "https://i.pravatar.cc/300?img=18",
+    "origin": "Bangladesh",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm Medium",
+    "battingStyle": "Left-hand Bat",
+    "price": 900000
+  },
+  {
+    "playerName": "Dev Patel",
+    "playerImg": "https://i.pravatar.cc/300?img=19",
+    "origin": "India",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm Leg Break",
+    "battingStyle": "Right-hand Bat",
+    "price": 1800000
+  },
+  {
+    "playerName": "Kusal Perera",
+    "playerImg": "https://i.pravatar.cc/300?img=20",
+    "origin": "Sri Lanka",
+    "playerType": "Wicketkeeper",
+    "bowlingStyle": "Right-arm Medium",
+    "battingStyle": "Left-hand Bat",
+    "price": 1600000
+  },
+  {
+    "playerName": "Hamza Ali",
+    "playerImg": "https://i.pravatar.cc/300?img=21",
+    "origin": "Pakistan",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm Off Break",
+    "battingStyle": "Right-hand Bat",
+    "price": 1250000
+  },
+  {
+    "playerName": "Shanto Karim",
+    "playerImg": "https://i.pravatar.cc/300?img=22",
+    "origin": "Bangladesh",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm Fast Medium",
+    "battingStyle": "Right-hand Bat",
+    "price": 750000
+  },
+  {
+    "playerName": "Ayaan Malik",
+    "playerImg": "https://i.pravatar.cc/300?img=23",
+    "origin": "Pakistan",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm Medium Fast",
+    "battingStyle": "Left-hand Bat",
+    "price": 1450000
+  },
+  {
+    "playerName": "Rahul Sen",
+    "playerImg": "https://i.pravatar.cc/300?img=24",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm Chinaman",
+    "battingStyle": "Right-hand Bat",
+    "price": 1150000
+  },
+  {
+    "playerName": "Mahir Ahmed",
+    "playerImg": "https://i.pravatar.cc/300?img=25",
+    "origin": "Bangladesh",
+    "playerType": "Wicketkeeper",
+    "bowlingStyle": "Right-arm Off Break",
+    "battingStyle": "Right-hand Bat",
+    "price": 1050000
+  },
+  {
+    "playerName": "Arjun Rao",
+    "playerImg": "https://i.pravatar.cc/300?img=26",
+    "origin": "India",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm Medium",
+    "battingStyle": "Left-hand Bat",
+    "price": 1750000
+  },
+  {
+    "playerName": "Rafiq Uddin",
+    "playerImg": "https://i.pravatar.cc/300?img=27",
+    "origin": "Bangladesh",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Left-arm Medium",
+    "battingStyle": "Right-hand Bat",
+    "price": 1300000
+  },
+  {
+    "playerName": "Dilan Fernando",
+    "playerImg": "https://i.pravatar.cc/300?img=28",
+    "origin": "Sri Lanka",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm Fast",
+    "battingStyle": "Right-hand Bat",
+    "price": 1400000
+  },
+  {
+    "playerName": "Zaid Hassan",
+    "playerImg": "https://i.pravatar.cc/300?img=29",
+    "origin": "Pakistan",
+    "playerType": "Batsman",
+    "bowlingStyle": "Right-arm Leg Break",
+    "battingStyle": "Right-hand Bat",
+    "price": 1550000
+  },
+  {
+    "playerName": "Nirav Joshi",
+    "playerImg": "https://i.pravatar.cc/300?img=30",
+    "origin": "India",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm Off Break",
+    "battingStyle": "Left-hand Bat",
+    "price": 1650000
+  }
+]

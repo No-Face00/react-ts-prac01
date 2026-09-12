@@ -6,7 +6,7 @@
     "playerType": "Batsman",
     "bowlingStyle": "Right-arm Off Break",
     "battingStyle": "Right-hand Bat",
-    "price": 850000
+    "price": 50000
   },
   {
     "playerName": "Rayan Ahmed",
@@ -15,7 +15,7 @@
     "playerType": "All-Rounder",
     "bowlingStyle": "Right-arm Medium",
     "battingStyle": "Left-hand Bat",
-    "price": 1200000
+    "price": 10000
   },
   {
     "playerName": "Sakib Rahman",
@@ -24,7 +24,7 @@
     "playerType": "Bowler",
     "bowlingStyle": "Right-arm Fast",
     "battingStyle": "Right-hand Bat",
-    "price": 950000
+    "price": 9000
   },
   {
     "playerName": "Adnan Khan",
@@ -33,7 +33,7 @@
     "playerType": "Batsman",
     "bowlingStyle": "Right-arm Off Break",
     "battingStyle": "Right-hand Bat",
-    "price": 1500000
+    "price": 15000
   },
   {
     "playerName": "Nabil Chowdhury",
@@ -42,7 +42,7 @@
     "playerType": "Wicketkeeper",
     "bowlingStyle": "Right-arm Medium",
     "battingStyle": "Left-hand Bat",
-    "price": 1100000
+    "price": 11000
   },
   {
     "playerName": "Fahim Islam",
@@ -51,7 +51,7 @@
     "playerType": "All-Rounder",
     "bowlingStyle": "Left-arm Orthodox",
     "battingStyle": "Left-hand Bat",
-    "price": 1350000
+    "price": 13500
   },
   {
     "playerName": "Imran Shah",
@@ -60,7 +60,7 @@
     "playerType": "Bowler",
     "bowlingStyle": "Left-arm Fast",
     "battingStyle": "Right-hand Bat",
-    "price": 1000000
+    "price": 10000
   },
   {
     "playerName": "Tanvir Hossain",
@@ -69,7 +69,7 @@
     "playerType": "Batsman",
     "bowlingStyle": "Right-arm Medium",
     "battingStyle": "Left-hand Bat",
-    "price": 900000
+    "price": 90000
   },
   {
     "playerName": "Dev Patel",
@@ -78,7 +78,7 @@
     "playerType": "All-Rounder",
     "bowlingStyle": "Right-arm Leg Break",
     "battingStyle": "Right-hand Bat",
-    "price": 1800000
+    "price": 18000
   },
   {
     "playerName": "Kusal Perera",
@@ -87,7 +87,7 @@
     "playerType": "Wicketkeeper",
     "bowlingStyle": "Right-arm Medium",
     "battingStyle": "Left-hand Bat",
-    "price": 1600000
+    "price": 16000
   },
   {
     "playerName": "Hamza Ali",
@@ -96,7 +96,7 @@
     "playerType": "Batsman",
     "bowlingStyle": "Right-arm Off Break",
     "battingStyle": "Right-hand Bat",
-    "price": 1250000
+    "price": 12500
   },
   {
     "playerName": "Shanto Karim",
@@ -105,7 +105,7 @@
     "playerType": "Bowler",
     "bowlingStyle": "Right-arm Fast Medium",
     "battingStyle": "Right-hand Bat",
-    "price": 750000
+    "price": 7500
   },
   {
     "playerName": "Ayaan Malik",
@@ -114,7 +114,7 @@
     "playerType": "All-Rounder",
     "bowlingStyle": "Right-arm Medium Fast",
     "battingStyle": "Left-hand Bat",
-    "price": 1450000
+    "price": 14500
   },
   {
     "playerName": "Rahul Sen",
@@ -123,7 +123,7 @@
     "playerType": "Bowler",
     "bowlingStyle": "Left-arm Chinaman",
     "battingStyle": "Right-hand Bat",
-    "price": 1150000
+    "price": 1150
   },
   {
     "playerName": "Mahir Ahmed",
@@ -132,7 +132,7 @@
     "playerType": "Wicketkeeper",
     "bowlingStyle": "Right-arm Off Break",
     "battingStyle": "Right-hand Bat",
-    "price": 1050000
+    "price": 10500
   },
   {
     "playerName": "Arjun Rao",
@@ -141,7 +141,7 @@
     "playerType": "Batsman",
     "bowlingStyle": "Right-arm Medium",
     "battingStyle": "Left-hand Bat",
-    "price": 1750000
+    "price": 17500
   },
   {
     "playerName": "Rafiq Uddin",
@@ -150,7 +150,7 @@
     "playerType": "All-Rounder",
     "bowlingStyle": "Left-arm Medium",
     "battingStyle": "Right-hand Bat",
-    "price": 1300000
+    "price": 13000
   },
   {
     "playerName": "Dilan Fernando",
@@ -159,7 +159,7 @@
     "playerType": "Bowler",
     "bowlingStyle": "Right-arm Fast",
     "battingStyle": "Right-hand Bat",
-    "price": 1400000
+    "price": 14000
   },
   {
     "playerName": "Zaid Hassan",
@@ -168,7 +168,7 @@
     "playerType": "Batsman",
     "bowlingStyle": "Right-arm Leg Break",
     "battingStyle": "Right-hand Bat",
-    "price": 1550000
+    "price": 15500
   },
   {
     "playerName": "Nirav Joshi",
@@ -177,6 +177,6 @@
     "playerType": "All-Rounder",
     "bowlingStyle": "Right-arm Off Break",
     "battingStyle": "Left-hand Bat",
-    "price": 1650000
+    "price": 16500
   }
 ]

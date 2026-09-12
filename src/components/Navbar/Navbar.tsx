@@ -1,17 +1,17 @@
+import { GiTwoCoins } from "react-icons/gi";
 import Logo from "../../assets/logo.png";
 
-const Navbar = () => {
+interface nevProps  {
+  coin: number;
+};
+
+const Navbar = ({ coin }: nevProps) => {
   return (
     <nav className="mx-4 mt-5 rounded-2xl border border-base-300 bg-base-100/90 px-5 py-3 shadow-sm backdrop-blur-md">
       <div className="container mx-auto flex items-center justify-between">
-        
         {/* Logo */}
         <a href="#" className="flex items-center">
-          <img
-            src={Logo}
-            alt="Logo"
-            className="h-12 w-auto object-contain"
-          />
+          <img src={Logo} alt="Logo" className="h-12 w-auto object-contain" />
         </a>
 
         {/* Navigation */}
@@ -59,17 +59,18 @@ const Navbar = () => {
                 Credit
               </span>
 
-              <span className="rounded-lg bg-primary px-3 py-1 text-sm font-bold text-primary-content">
-                $1,000
+              <span
+                className="flex items-center gap-0.5 rounded-lg bg-primary px-3 py-1 text-sm font-bold text-primary-content"
+              >
+                {coin}
+                <GiTwoCoins />
               </span>
             </div>
           </li>
         </ul>
 
         {/* Mobile Menu Button */}
-        <button className="btn btn-ghost btn-circle md:hidden">
-          ☰
-        </button>
+        <button className="btn btn-ghost btn-circle md:hidden">☰</button>
       </div>
     </nav>
   );

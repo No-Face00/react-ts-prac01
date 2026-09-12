@@ -1,11 +1,32 @@
+import { useState, type Dispatch, type SetStateAction } from 'react';
 import type { PlayerType } from '../../PlayerType/PlayerType';
 import { FaUser } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 interface PlayerCardProps {
   player: PlayerType;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
 }
 
-const PlayerCard = ({ player }: PlayerCardProps) => {
+const PlayerCard = ({ player, coin, setCoin }: PlayerCardProps) => {
+  const [isSelected, setIsSelected] = useState(false);
+
+  const handleSelectPlayer = () => {
+    setIsSelected(true);
+    const currentCoin = coin - player.price;
+    
+    
+    if (currentCoin >= 0){
+      setCoin(currentCoin);
+    toast.success(`Successfully Bought ${player.playerName} `)
+    }
+
+    else {toast.warn("Coin is not enough")}
+
+  };
+
+
   return (
     <div
       key={player.playerName}
@@ -71,8 +92,11 @@ const PlayerCard = ({ player }: PlayerCardProps) => {
             <p className="mt-1 text-2xl font-extrabold text-primary">${player.price.toLocaleString()}</p>
           </div>
 
-          <button className="btn btn-primary rounded-xl px-6 shadow-md transition-all hover:scale-105">
-            Buy Now
+          <button 
+          onClick={()=>handleSelectPlayer()}
+          disabled={isSelected === true ? true :false }
+          className="btn btn-primary rounded-xl px-6 shadow-md transition-all hover:scale-105">
+            {isSelected ? 'Bought' : 'Buy Now'}
           </button>
         </div>
       </div>

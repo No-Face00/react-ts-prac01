@@ -1,4 +1,4 @@
-import { useState, type Dispatch, type SetStateAction } from 'react';
+import { type Dispatch, type SetStateAction } from 'react';
 import type { PlayerType } from '../../PlayerType/PlayerType';
 import { FaUser } from 'react-icons/fa';
 import { toast } from 'react-toastify';
@@ -7,30 +7,39 @@ interface PlayerCardProps {
   player: PlayerType;
   coin: number;
   setCoin: Dispatch<SetStateAction<number>>;
+  selectedPlayers: PlayerType[];
+  setSelectedPlayers: Dispatch<SetStateAction<PlayerType[]>>;
 }
 
-const PlayerCard = ({ player, coin, setCoin }: PlayerCardProps) => {
-  const [isSelected, setIsSelected] = useState(false);
+const PlayerCard = ({ player, coin, setCoin, selectedPlayers, setSelectedPlayers }: PlayerCardProps) => {
+  const isSelected = selectedPlayers.some(
+    (selectedPlayer) => selectedPlayer.playerName === player.playerName
+  );
 
   const handleSelectPlayer = () => {
-    setIsSelected(true);
-    const currentCoin = coin - player.price;
-    
-    
-    if (currentCoin >= 0){
-      setCoin(currentCoin);
-    toast.success(`Successfully Bought ${player.playerName} `)
+    if (isSelected) {
+      toast.warn(`${player.playerName} is already selected.`);
+      return;
     }
 
-    else {toast.warn("Coin is not enough")}
+    const currentCoin = coin - player.price;
 
+    if (currentCoin >= 0) {
+      setCoin(currentCoin);
+      setSelectedPlayers((prevPlayers) => [...prevPlayers, player]);
+      toast.success(`Successfully Bought ${player.playerName}`);
+    } else {
+      toast.warn("Coin is not enough");
+    }
   };
+    
+  
 
 
   return (
     <div
       key={player.playerName}
-      className="group w-full overflow-hidden rounded-2xl border border-base-300 bg-base-100 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+      className="group w-full overflow-hidden rounded-[28px] border border-base-300/80 bg-base-100 shadow-lg shadow-base-300/20 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-primary/10"
     >
       <div className="relative h-72 overflow-hidden bg-base-200">
         <img
@@ -39,66 +48,63 @@ const PlayerCard = ({ player, coin, setCoin }: PlayerCardProps) => {
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
 
-        <div className="absolute right-4 top-4">
-          <span className="badge badge-primary px-4 py-3 font-semibold shadow-lg">
+        <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
+          <span className="badge badge-primary px-4 py-3 text-xs font-bold uppercase tracking-wider shadow-lg">
             {player.playerType}
+          </span>
+          <span className="rounded-full border border-white/30 bg-black/20 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+            🏏 Cricket
           </span>
         </div>
 
-        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/80 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-linear-to-t from-black/90 via-black/50 to-transparent" />
 
-        <div className="absolute bottom-4 left-5 text-white">
+        <div className="absolute bottom-4 left-5 right-5 flex items-center justify-between text-white">
           <div className="flex items-center gap-2">
-            <FaUser className="text-sm" />
-
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
+              <FaUser className="text-sm" />
+            </span>
             <h2 className="text-xl font-bold">{player.playerName}</h2>
           </div>
         </div>
       </div>
 
-      <div className="card-body p-5">
-        <div className="flex items-center justify-between">
+      <div className="space-y-4 p-5">
+        <div className="flex items-center justify-between gap-4">
           <div>
-            <p className="text-xs uppercase tracking-wider text-base-content/50">Origin</p>
-            <p className="font-semibold">{player.origin}</p>
+            <p className="text-[10px] uppercase tracking-[0.22em] text-base-content/50">Origin</p>
+            <p className="mt-1 font-semibold">{player.origin}</p>
           </div>
-
-          <div className="rounded-lg bg-base-200 px-3 py-2 text-sm font-medium">🏏 Cricket</div>
-        </div>
-
-        <div className="divider my-1" />
-
-        <div>
-          <p className="mb-3 text-xs uppercase tracking-wider text-base-content/50">Playing Style</p>
-
-          <div className="grid grid-cols-2 gap-3">
-            <div className="rounded-xl bg-base-200 p-3">
-              <p className="text-xs text-base-content/50">Batting</p>
-              <p className="mt-1 text-sm font-semibold">{player.battingStyle}</p>
-            </div>
-
-            <div className="rounded-xl bg-base-200 p-3">
-              <p className="text-xs text-base-content/50">Bowling</p>
-              <p className="mt-1 text-sm font-semibold">{player.bowlingStyle}</p>
-            </div>
+          <div className="rounded-xl bg-base-200 px-3 py-2 text-sm font-medium text-base-content/80">
+            ${player.price.toLocaleString()}
           </div>
         </div>
 
-        <div className="divider my-1" />
+        <div className="divider my-0" />
 
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <p className="text-xs uppercase tracking-wider text-base-content/50">Player Price</p>
-            <p className="mt-1 text-2xl font-extrabold text-primary">${player.price.toLocaleString()}</p>
+        <div className="grid grid-cols-2 gap-3">
+          <div className="rounded-2xl bg-base-200 p-3">
+            <p className="text-[10px] uppercase tracking-[0.18em] text-base-content/50">Batting</p>
+            <p className="mt-2 text-sm font-bold">{player.battingStyle}</p>
           </div>
 
-          <button 
-          onClick={()=>handleSelectPlayer()}
-          disabled={isSelected === true ? true :false }
-          className="btn btn-primary rounded-xl px-6 shadow-md transition-all hover:scale-105">
-            {isSelected ? 'Bought' : 'Buy Now'}
-          </button>
+          <div className="rounded-2xl bg-base-200 p-3">
+            <p className="text-[10px] uppercase tracking-[0.18em] text-base-content/50">Bowling</p>
+            <p className="mt-2 text-sm font-bold">{player.bowlingStyle}</p>
+          </div>
         </div>
+
+        <button
+          onClick={() => handleSelectPlayer()}
+          disabled={isSelected}
+          className={`btn w-full rounded-2xl px-6 text-base font-semibold transition-all ${
+            isSelected
+              ? "btn-disabled bg-success/20 text-success-content border-success/20"
+              : "btn-primary shadow-lg shadow-primary/20 hover:scale-[1.01]"
+          }`}
+        >
+          {isSelected ? "Bought" : "Buy Now"}
+        </button>
       </div>
     </div>
   );
